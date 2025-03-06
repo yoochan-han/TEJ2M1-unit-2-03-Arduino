@@ -1,22 +1,22 @@
 /*
-  blink program with breadboard
-
   created on Feb 2025
   by yoochan Han
+  
+  blink program with breadboard
 */
 
+const int PIN_5 = 5;
 int blinkTime = 1000; //set variable to 1000
-int Pin5 = 5;
 
 void setup()
 {
-  pinMode(Pin5, OUTPUT);
+  pinMode(PIN_5, OUTPUT);
 }
 
 void loop()
 {
-  digitalWrite(Pin5, HIGH);
-  delay(1000); // Wait for blinkTime
-  digitalWrite(Pin5, LOW);
-  delay(1000); // Wait for a second
-}
+  digitalWrite(PIN_5, HIGH);
+  delay(blinkTime); // Wait for blinkTime
+  digitalWrite(PIN_5, LOW);
+  delay(blinkTime); // Wait for a second
+} 
